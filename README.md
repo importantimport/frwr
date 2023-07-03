@@ -1,5 +1,12 @@
 # FRWR 🍋🕸💍
 
+<a href="https://fresh.deno.dev">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://fresh.deno.dev/fresh-badge-dark.svg">
+    <img src="https://fresh.deno.dev/fresh-badge.svg" alt="Made with Fresh">
+  </picture>
+</a>
+
 ## Usage
 
 ### Local
