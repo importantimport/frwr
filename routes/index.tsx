@@ -3,6 +3,8 @@ import { CSS, render } from "$gfm"
 import { useSignal } from '@preact/signals'
 import Counter from '../islands/Counter.tsx'
 
+import file from '../static/members.json' assert { type: 'json' }
+
 const about = await fetch(import.meta.resolve('../static/about.md')).then(res => res.text())
 
 export default function Home() {
@@ -25,6 +27,7 @@ export default function Home() {
         </p>
         <Counter count={count} />
       </div>
+      {file.members.map((member) => (<p>{member.title}</p>))}
       <div
         class="markdown-body"
         dangerouslySetInnerHTML={{ __html: render(about) }}
