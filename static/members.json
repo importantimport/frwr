@@ -4,6 +4,14 @@
     {
       "title": "FRWR",
       "url": "https://frwr.deno.dev"
+    },
+    {
+      "title": "./kwaa.dev (for Test)",
+      "url": "https://kwaa.dev"
+    },
+    {
+      "title": "!mportantImport (for Test)",
+      "url": "https://github.com/importantimport"
     }
   ]
 }
