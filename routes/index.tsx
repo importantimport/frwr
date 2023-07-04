@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Fresh App</title>
+        <title>{meta.name}</title>
         <style dangerouslySetInnerHTML={{ __html: CSS }} />
       </Head>
       <main class='flex flex-col lg:flex-row'>
