@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://frwr.deno.dev/members.schema.json",
+  "title": "Members",
+  "description": "Webring Members List",
+  "type": "object",
+  "properties": {
+    "members": {
+      "description": "Webring Members List",
+      "type": "array",
+      "items": {
+        "description": "Webring Member",
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "avatar": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "feed": {
+            "type": "object",
+            "properties": {
+              "json": {
+                "type": "string"
+              },
+              "atom": {
+                "type": "string"
+              },
+              "rss": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "required": ["title", "url"]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  },
+  "required": ["members"]
+}

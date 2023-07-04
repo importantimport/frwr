@@ -1,0 +1,9 @@
+{
+  "$schema": "./members.schema.json",
+  "members": [
+    {
+      "title": "FRWR",
+      "url": "https://frwr.deno.dev"
+    }
+  ]
+}
