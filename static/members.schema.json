@@ -13,27 +13,34 @@
         "type": "object",
         "properties": {
           "title": {
+            "description": "the name of the site.",
             "type": "string"
           },
           "url": {
+            "description": "the URL of a site.",
             "type": "string"
           },
           "avatar": {
+            "description": "the URL for an image for the site.",
             "type": "string"
           },
           "summary": {
+            "description": "a plain text sentence or two describing the site.",
             "type": "string"
           },
           "feed": {
             "type": "object",
             "properties": {
               "json": {
+                "description": "JSON Feed, e.g. https://example.com/feed.json",
                 "type": "string"
               },
               "atom": {
+                "description": "Atom Feed, e.g. https://example.com/atom.xml",
                 "type": "string"
               },
               "rss": {
+                "description": "RSS Feed, e.g. https://example.com/rss.xml",
                 "type": "string"
               }
             }
