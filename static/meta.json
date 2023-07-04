@@ -1,0 +1,6 @@
+{
+  "name": "FRWR",
+  "nested": {
+    "test": "foo bar baz"
+  }
+}
