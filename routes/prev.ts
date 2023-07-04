@@ -12,5 +12,5 @@ export const handler: Handlers = {
       (prev ?? file.members.at(-1)!).url,
       307,
     )
-  }
+  },
 }

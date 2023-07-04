@@ -41,7 +41,7 @@ export default function Home() {
         </p>
         <Counter count={count} />
       </div>
-      {file.members.map((member) => (<p>{member.title}</p>))}
+      {file.members.map((member) => <p>{member.title}</p>)}
       <div
         class='markdown-body'
         dangerouslySetInnerHTML={{ __html: render(about) }}
