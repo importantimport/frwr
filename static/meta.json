@@ -1,5 +1,8 @@
 {
   "name": "FRWR",
+  "header": {
+    "title": "🍋🕸💍"
+  },
   "nested": {
     "test": "foo bar baz"
   }
