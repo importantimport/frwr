@@ -17,7 +17,7 @@ export default () => (
       |
     </span>
     <a
-      href='https://github.com/denoland/fresh'
+      href='https://github.com/importantimport/frwr'
       class='inline-block hover:text-black my-auto'
       aria-label='GitHub'
     >
