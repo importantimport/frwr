@@ -1,11 +1,7 @@
-import { Head } from '$fresh/runtime.ts'
-import { CSS, render } from '$gfm'
+import { render } from '$gfm'
 import { useSignal } from '@preact/signals'
 import Counter from '../islands/Counter.tsx'
-import Header from '../components/Header.tsx'
-import Footer from '../components/Footer.tsx'
 
-import file from '../static/members.json' assert { type: 'json' }
 import meta from '../static/meta.json' assert { type: 'json' }
 
 type Meta = Record<string, string | Record<string, string>>
@@ -26,36 +22,21 @@ const about = await fetch(import.meta.resolve('../static/about.md'))
 export default function Home() {
   const count = useSignal(3)
   return (
-    <>
-      <Head>
-        <title>{meta.name}</title>
-        <style dangerouslySetInnerHTML={{ __html: CSS }} />
-      </Head>
-      <main class='flex flex-col lg:flex-row'>
-        <div class='flex-1'>
-          <Header />
-          <div class='p-8 mx-auto max-w-screen-md'>
-            <img
-              src='/logo.svg'
-              class='w-32 h-32'
-              alt='the fresh logo: a sliced lemon dripping with juice'
-            />
-            <p class='my-6'>
-              Welcome to `fresh`. Try updating this message in the
-              ./routes/index.tsx file, and refresh.
-            </p>
-            <Counter count={count} />
-            <div
-              class='markdown-body'
-              dangerouslySetInnerHTML={{ __html: render(about) }}
-            />
-          </div>
-          <Footer />
-        </div>
-        <div class='flex-1'>
-          {file.members.map((member) => <p>{member.title}</p>)}
-        </div>
-      </main>
-    </>
+    <div class='p-8 mx-auto max-w-screen-md'>
+      <img
+        src='/logo.svg'
+        class='w-32 h-32'
+        alt='the fresh logo: a sliced lemon dripping with juice'
+      />
+      <p class='my-6'>
+        Welcome to `fresh`. Try updating this message in the ./routes/index.tsx
+        file, and refresh.
+      </p>
+      <Counter count={count} />
+      <div
+        class='markdown-body'
+        dangerouslySetInnerHTML={{ __html: render(about) }}
+      />
+    </div>
   )
 }
