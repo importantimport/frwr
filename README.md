@@ -7,6 +7,10 @@
   </picture>
 </a>
 
+<a href="https://dash.deno.com/new?url=https://raw.githubusercontent.com/importantimport/frwr/main/main.ts">
+  <img src="./static/deno-deploy-button.svg" alt="Deploy this example">
+</a>
+
 ## Usage
 
 ### Local
