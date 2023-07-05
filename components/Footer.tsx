@@ -6,11 +6,16 @@ export default () => (
       <span class='text-gray-500'>
         Powered By
       </span>
-      <a class='font-bold text-2xl' href='https://github.com/importantimport/frwr'>
+      <a
+        class='font-bold text-2xl'
+        href='https://github.com/importantimport/frwr'
+      >
         🍋🕸💍
       </a>
     </div>
-    <span class='flex items-center text-center text-gray-500 mx-auto sm:opacity-0'>|</span>
+    <span class='flex items-center text-center text-gray-500 mx-auto sm:opacity-0'>
+      |
+    </span>
     <a
       href='https://github.com/denoland/fresh'
       class='inline-block hover:text-black my-auto'
