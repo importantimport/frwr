@@ -6,7 +6,7 @@ import meta from '../static/meta.json' assert { type: 'json' }
 
 type Meta = Record<string, string | Record<string, string>>
 
-const about = await fetch(import.meta.resolve('../static/about.md'))
+const about = await fetch(import.meta.resolve('../static/docs/index.md'))
   .then((res) => res.text())
   .then((text) =>
     text.replaceAll(
@@ -19,7 +19,7 @@ const about = await fetch(import.meta.resolve('../static/about.md'))
     )
   )
 
-export default function Home() {
+export default () => {
   const count = useSignal(3)
   return (
     <div class='p-8 mx-auto max-w-screen-md'>
